@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="error" style="font-size: large; color: darkred;">
+        
+  </div>
+  <div class="main container">
+
+    <div id="1">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tb"></tbody>
+      </table>
+    </div>
+    <div id="2">
+      <input type="number" id="userId" placeholder="ID">
+      <button id="getUserButton">Get User</button>
+      <table id="singleUserTable">
+
+      </table>
+    </div>
+    <div class="row">
+      <div id="3" class="p-4 col-lg-6">
+        <h2>Add User</h2>
+        <div>
+          <input type="text" id="name">
+          <label for="name">Name</label>
+        </div>
+        <div>
+          <input type="text" id="gender">
+          <label for="gender">Gender</label>
+        </div>
+        <div>
+          <input type="number" id="age">
+          <label for="age">Age</label>
+        </div>
+        <div>
+          <input type="text" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <button id="addUserButton">Add User</button>
+        </div>
+      </div>
+      <div id="4" class="p-4 col-lg-6">
+        <h2>Edit User</h2>
+        <div>
+          <input type="number" id="eid">
+          <label for="eid">ID</label>          
+        </div>
+        <div>
+          <input type="text" id="ename">
+          <label for="ename">Name</label>
+        </div>
+        <div>
+          <input type="text" id="egender">
+          <label for="egender">Gender</label>
+        </div>
+        <div>
+          <input type="number" id="eage">
+          <label for="eage">Age</label>
+        </div>
+        <div>
+          <input type="text" id="eemail">
+          <label for="eemail">Email</label>
+        </div>
+        <div>
+          <button id="editUserButton">Edit User</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="5" class="p-4">
+        <h2>Delete User</h2>
+        <input type="number" id="did">
+        <label for="did">id</label>
+        <button id="deleteUserButton">DeleteUser</button>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
